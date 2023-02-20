@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .footer {
+        position: fixed;
+        left: 0;
+        right: 15;
+        bottom: 0;
+        width: 100%;
+        text-align: right;
+      }
+
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .abc {
+        text-align: center;
+      }
+
+      .ch {
+        text-align: justify;
+        margin-left: 50%;
+        margin-top: -1.5%;
+      }
+
+      .hob {
+        margin-left: -7%;
+      }
+
+      .submit {
+        margin-right: 10px;
+      }
+
+      .reset {
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abc">
+      <h2>Student Registration form</h2>
+      <form action="backend.php">
+        <div>Name: <input type="text" /></div>
+        <br />
+        <div>Phone No: <input type="text" /></div>
+        <br />
+        <div>Date of Birth: <input type="date" /></div>
+        <br />
+        <div>
+          Address: <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br />
+        <div>
+          Gender: <input type="radio" name="MyGender" />Male
+          <input type="radio" name="MyGender" />Female
+        </div>
+        <br />
+        <div>
+          <label for="city">City : </label>
+          <select id="city" , name="city">
+            <option value="selectcity">Select City</option>
+            <option value="Ghaziabad">Mumbai</option>
+            <option value="Gurugram">Banglore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Gurugram</option>
+          </select>
+        </div>
+        <br />
+        <label class="hob" for="hobbies">Hobbies : </label>
+        <div class="ch">
+          <input type="checkbox" name="song" value="songs" />
+          <label for="song">Music</label><br />
+
+          <input type="checkbox" name="song" value="songs" />
+          <label for="song">Sports</label><br />
+
+          <input type="checkbox" name="song" value="songs" />
+          <label for="song">Reading</label><br />
+
+          <input type="checkbox" name="song" value="songs" />
+          <label for="song">Hobby</label><br />
+
+          <input type="checkbox" name="song" value="songs" />
+          <label for="song">Hobby</label><br />
+        </div>
+        <br />
+
+        <div>
+          <input class="submit" type="submit" value="Submit Now" />
+          <input class="reset" type="reset" value="Reset Now" />
+        </div>
+        <br />
+        <h2>Student Records</h2>
+
+        <table>
+          <tr>
+            <th>S.No.</th>
+            <th>Name</th>
+            <th>Phone No.</th>
+            <th>Gender</th>
+            <th>DOB</th>
+            <th>Hobbies</th>
+          </tr>
+          <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">Akash</td>
+            <td rowspan="3">123-4-567</td>
+            <td rowspan="3">Male</td>
+            <td rowspan="3">12/12/1996</td>
+            <td>Music</td>
+          </tr>
+          <tr>
+            <td>Dance</td>
+          </tr>
+
+          <tr>
+            <td>Cooking</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">Akash</td>
+            <td rowspan="3">123-4-567</td>
+            <td rowspan="3">Male</td>
+            <td rowspan="3">12/12/1996</td>
+            <td>Dance</td>
+          </tr>
+          <tr>
+            <td>Travel</td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Gemini Solutions Pvt Ltd</p>
+    </div>
+  </body>
+</html>
